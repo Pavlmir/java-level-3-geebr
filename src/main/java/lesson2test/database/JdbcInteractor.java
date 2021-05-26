@@ -1,4 +1,4 @@
-package lesson2.database;
+package lesson2test.database;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

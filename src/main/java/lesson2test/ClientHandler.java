@@ -1,5 +1,5 @@
-package lesson2;
-import lesson2.server.MyServer;
+package lesson2test;
+import lesson2test.server.MyServer;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

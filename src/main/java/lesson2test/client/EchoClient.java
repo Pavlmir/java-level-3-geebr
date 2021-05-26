@@ -1,4 +1,4 @@
-package lesson2.client;
+package lesson2test.client;
 
 // --module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml,javafx.web - для запуска
 import javafx.application.Application;

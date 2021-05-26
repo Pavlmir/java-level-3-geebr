@@ -1,6 +1,6 @@
-package lesson2.client;
+package lesson2test.client;
 
-import lesson2.ChatConstants;
+import lesson2test.ChatConstants;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -1,8 +1,8 @@
-package lesson2.server;
+package lesson2test.server;
 
-import lesson2.ChatConstants;
-import lesson2.ClientHandler;
-import lesson2.database.JdbcInteractor;
+import lesson2test.ChatConstants;
+import lesson2test.ClientHandler;
+import lesson2test.database.JdbcInteractor;
 
 import java.io.IOException;
 import java.net.ServerSocket;
