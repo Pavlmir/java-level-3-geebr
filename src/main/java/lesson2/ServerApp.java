@@ -1,6 +1,6 @@
-package lesson2test;
+package lesson2;
 
-import lesson2test.server.MyServer;
+import lesson2.server.MyServer;
 
 /**
  * Класс для запуска приложения

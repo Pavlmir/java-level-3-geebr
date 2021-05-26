@@ -1,6 +1,6 @@
-package lesson2test.database;
+package lesson2.database;
 
-import lesson2test.ChatConstants;
+import lesson2.ChatConstants;
 
 import java.sql.*;
 

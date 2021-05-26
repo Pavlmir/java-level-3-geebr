@@ -1,4 +1,4 @@
-package lesson2test.server;
+package lesson2.server;
 
 import java.util.List;
 import java.util.Optional;

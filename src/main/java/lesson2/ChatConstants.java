@@ -1,4 +1,4 @@
-package lesson2test;
+package lesson2;
 
 public class ChatConstants {
 
