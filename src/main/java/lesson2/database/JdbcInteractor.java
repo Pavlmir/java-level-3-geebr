@@ -14,7 +14,6 @@ public class JdbcInteractor {
     public JdbcInteractor() {
         this.jc = JdbcController.getIdbc();
     }
-
     public Statement statement;
 
     // Аутентификация по базе
