@@ -14,7 +14,7 @@
 <?import javafx.scene.control.Label?>
 <VBox fx:controller="lesson3.network.Messenger.Controller"
       xmlns:fx="http://javafx.com/fxml"
-      stylesheets="/css/chat_style.css"
+      stylesheets="/lesson3/css/chat_style.css"
       alignment="center" fx:id="mainFrame">
     <HBox fx:id="closeArea" HBox.hgrow="ALWAYS" alignment="CENTER_RIGHT" prefHeight="20">
         <Button fx:id="btnHide" onAction="#minimizeWindow" prefWidth="16" prefHeight="16"/>
@@ -42,13 +42,13 @@
                 <ImageView fx:id="imageView" layoutX="5.0" layoutY="5.0" fitHeight="40.0" fitWidth="230.0"
                            pickOnBounds="false" preserveRatio="true">
                     <image>
-                        <Image url="/img/gb.png"/>
+                        <Image url="/lesson3/img/gb.png"/>
                     </image>
                 </ImageView>
                 <HBox alignment="CENTER">
                     <ImageView fx:id="imageConnect" fitHeight="20.0" fitWidth="20.0" pickOnBounds="false" preserveRatio="true">
                         <image>
-                            <Image url="/img/notconnect.png"/>
+                            <Image url="/lesson3/img/notconnect.png"/>
                         </image>
                     </ImageView>
                 </HBox>
