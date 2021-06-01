@@ -1,8 +1,9 @@
-package lesson2test.database;
-
-import lesson2test.ChatConstants;
+package lesson2.database;
 
 import java.sql.*;
+
+import static lesson2.utils.Share.JDBC_CLASS_NAME;
+import static lesson2.utils.Share.URL_JDBC;
 
 public class JdbcController {
 
@@ -16,11 +17,14 @@ public class JdbcController {
 
     private JdbcController() {
         try {
-            connection = DriverManager.getConnection(ChatConstants.URL_JDBC);
+            Class.forName(JDBC_CLASS_NAME);
+            connection = DriverManager.getConnection(URL_JDBC);
             statement = connection.createStatement();
 
             createTables();
             fillUsersTableTestData();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -36,7 +40,7 @@ public class JdbcController {
 
             for (int i = 0; i < 10; i++) {
                 String query = String.format(
-                        "INSERT INTO users (login, password, nickname) VALUES ('%s', '%s', '%s')", "login" + i, "pass" + i, "nick" + i);
+                        "INSERT INTO users (login, password, nickname) VALUES ('%s', '%s', '%s')", "login"+i,"pass"+i,"nick"+i);
 
                 statement.execute(query);
             }
@@ -57,9 +61,7 @@ public class JdbcController {
     public void disconnect() {
         try {
             connection.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        } catch (Exception e) {e.printStackTrace();}
     }
 
     // Выполнить SELECT
@@ -68,9 +70,7 @@ public class JdbcController {
 
         try {
             rs = statement.executeQuery(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        } catch (SQLException e) {e.printStackTrace();}
 
         return rs;
     }
@@ -79,12 +79,10 @@ public class JdbcController {
     public synchronized void executeUpdate(String sql) {
         try {
             statement.executeUpdate(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        } catch (SQLException e) {e.printStackTrace();}
     }
 
-    private void createTables() {
+    private void createTables(){
         try {
             //Создаем таблицу пользователей если она еще не была создана
             statement.execute("CREATE TABLE IF NOT EXISTS users(" +

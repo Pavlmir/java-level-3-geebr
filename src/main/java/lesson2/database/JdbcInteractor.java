@@ -1,4 +1,4 @@
-package lesson2test.database;
+package lesson2.database;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,7 +14,6 @@ public class JdbcInteractor {
     public JdbcInteractor() {
         this.jc = JdbcController.getIdbc();
     }
-
     public Statement statement;
 
     // Аутентификация по базе
