@@ -13,4 +13,3 @@ Java. Уровень 3
 Appearance & Behavior -> Path Variables -> PATH_TO_FX путь к каталогу lib
 --module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml
 
-
