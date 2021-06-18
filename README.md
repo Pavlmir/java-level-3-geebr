@@ -1,4 +1,4 @@
-# java-level-3-geebr
+# java-level-3-geekbr
 Java. Уровень 3
 Урок 1. Обобщения
 Урок 2. Базы данных
